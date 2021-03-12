@@ -1,0 +1,16 @@
+.sub-header {
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: row;
+  height: 40pt;
+  justify-content: space-around;
+  align-items: center;
+  .btn {
+    border-style: hidden;
+    background-color: cadetblue;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: 0;
+  }
+}

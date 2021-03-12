@@ -1,0 +1,21 @@
+.item-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 90%;
+  padding: 10%;
+  margin-top: 10%;
+  .item-img {
+    width: 100pt;
+    height: 100pt;
+    flex: 2;
+  }
+  .item-name {
+    flex: 1;
+  }
+  .item-price {
+    flex: 1;
+  }
+}
