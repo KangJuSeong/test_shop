@@ -8,16 +8,18 @@
     background-color: white;
     border-style: hidden;
     margin-top: 30pt;
-    font-size: larger;
+    font-size: 25pt;
     cursor: pointer;
     text-align: center;
     padding-right: 10pt;
     outline: 0;
+    font-family:'Courier New', Courier, monospace;
   };
   .header-center {
     text-align: center;
     flex: 1;
-    font-size: 40pt;
+    font-size: 50pt;
+    font-family:'Courier New', Courier, monospace;
   };
   .header-right {
     flex: 1;

@@ -1,0 +1,40 @@
+.outline-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 800pt;
+  .title-box {
+    font-size: 70pt;
+    margin-bottom: 2cm;
+    margin-top: 2cm;
+    font-family:'Courier New', Courier, monospace;
+  }
+  .main-box {
+    overflow: hidden;
+    display: grid;
+    width: 60%;
+    height: 400pt;
+    border: 1pt solid darkviolet;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    .menu-banner1 {
+      border: 2pt solid black;
+      grid-row: 1 / span 2;
+      margin: 10pt;
+    }
+    .menu-banner2 {
+      border: 2pt solid red;
+      margin: 10pt;
+    }
+    .menu-banner3 {
+      border: 2pt solid blue;
+      margin: 10pt;
+    }
+    .menu-banner4 {
+      border: 2pt solid green;
+      margin: 10pt;
+      grid-row: 1 / span 2;
+      grid-column: 3 / span 1;
+    }
+  }
+}

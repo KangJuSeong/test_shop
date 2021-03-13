@@ -4,6 +4,8 @@ import './App.scss';
 import Header from '../Header/header'
 import SubHeader from '../Header/sub-header'
 import Body from '../Body/body'
+import MainBanner from '../Body/mainbanner'
+import MenuBanner from '../Body/menubanner'
 import data from '../../MOCK_DATA.json'
 
 
@@ -18,11 +20,17 @@ export default class App extends React.Component{
   render() {
     return(
       <BrowserRouter>
-        <div>
-          <Header/>
-          <SubHeader/>
-          {/* <Body items={this.state.items}/> */}
-        </div>
+        <head>
+          <title>BRAND</title>
+        </head>
+        <body>
+          <div>
+            <Header/>
+            <SubHeader/>
+            <MainBanner/>
+            <MenuBanner/>
+          </div>
+        </body>
       </BrowserRouter>
     )
   }
