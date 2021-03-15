@@ -1,6 +1,9 @@
 import './mainbanner.scss'
 import {useState} from 'react'
 import Slider from "react-slick"
+import NextArrow from '../Item/arrows/nextarrow'
+import PrevArrow from '../Item/arrows/prevarrow'
+
 
 const banner_list = [
   '/images/main-banner1.jpg',
@@ -11,7 +14,7 @@ const banner_list = [
 
 export default function MainBanner () {
   const settings = {
-    arrow: true,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -21,11 +24,15 @@ export default function MainBanner () {
     pauseOnHover: true,
     fade: true,
     lazyLoad: true,
+    prevArrow: <PrevArrow/>,
+    nextArrow: <NextArrow/>,
+    className: 'slider-box',
+    
   };
   
   return (
     <div className='main-banner-box'>
-      <Slider className='slider-box' {...settings}>
+      <Slider {...settings}>
         {banner_list.map((banner) => {
           return (
               <img src={banner} className="banner-img"/>
