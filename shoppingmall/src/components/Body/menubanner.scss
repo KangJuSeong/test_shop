@@ -14,27 +14,63 @@
     display: grid;
     width: 60%;
     height: 400pt;
-    border: 1pt solid darkviolet;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     .menu-banner1 {
-      border: 2pt solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 25pt;
+      font-weight: 600;
       grid-row: 1 / span 2;
       margin: 10pt;
+      background-image: url("../../component-img/best_bracelet.jpg");
+    }
+    .menu-banner1:hover {
+      background-image: url("../../component-img/best_bracelet.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
     }
     .menu-banner2 {
-      border: 2pt solid red;
       margin: 10pt;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 25pt;
+      font-weight: 600;
+      background-image: url("../../component-img/best_neck.jpg");
+    }
+    .menu-banner2:hover {
+      background-image: url("../../component-img/best_neck.jpg");
+      background-size: cover;
     }
     .menu-banner3 {
-      border: 2pt solid blue;
       margin: 10pt;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 25pt;
+      font-weight: 600;
+      background-image: url("../../component-img/best_ring.jpg");
+    }
+    .menu-banner3:hover {
+      background-image: url("../../component-img/best_ring.jpg");
+      background-size: cover;
     }
     .menu-banner4 {
-      border: 2pt solid green;
       margin: 10pt;
       grid-row: 1 / span 2;
       grid-column: 3 / span 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 25pt;
+      font-weight: 600;
+      background-image: url("../../component-img/best_earing.jpg");
+    }
+    .menu-banner4:hover {
+      background-image: url("../../component-img/best_earing.jpg");
+      background-size: cover;
     }
   }
 }
